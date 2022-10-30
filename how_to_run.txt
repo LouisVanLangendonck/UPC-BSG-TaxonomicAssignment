@@ -1,0 +1,23 @@
+-------------------- Script per script --------------------
+
+1) Extract folders and navigate to this folder in CMD.
+2) Place 'nodes.dmp' (taxonomy dataset) and 'sample.inp' (genome reads) in the same directory!
+3) Execute: 'python 01_make_tree.py'
+(normally, if file naming and location are kept, not extra input is necessary. 
+If you have placed input files in another location or by other name, run python '01_make_tree.py -h' for help.)
+4) Execute: 'python 02_make_skeleton.py'
+5) Execute: 'python 03_find_matches.py'
+
+--> Note that this script-per-script approach takes way longer as files are dumped and reread in to memory multiple times
+
+-------------------- In one go --------------------
+
+To obtain the DNA match of all reads in one run (more efficient):
+1) Extract folders and navigate to this folder in CMD.
+2) Place 'nodes.dmp' (taxonomy dataset) and 'sample.inp' (genome reads) in the same directory!
+3) Execute: 'python full_pipeline.py'
+
+--> To change input (location or name), run 'python full_pipeline.py -h' for instructions. 
+
+---------------------------------------------------
+
